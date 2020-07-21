@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--<p id="target">-->
+        <!--Hello world-->
+    <!--</p>-->
+    <!--<script>-->
+        <!--var target = document.getElementById('target');-->
+        <!--// attribute 방식-->
+        <!--target.setAttribute('class', 'important');-->
+        <!--// property 방식-->
+        <!--target.className = 'important';-->
+    <!--</script>-->
+
+    <a id="target" href="./demo1.html">ot</a>
+    <script>
+    //현재 웹페이지가 http://localhost/webjs/Element/attribute_api/demo3.html 일 때
+    var target = document.getElementById('target');
+    // http://localhost/webjs/Element/attribute_api/demo1.html
+    console.log('target.href', target.href);
+    // ./demo1.html
+    console.log('target.getAttribute("href")', target.getAttribute("href"));
+    </script>
+</body>
+</html>

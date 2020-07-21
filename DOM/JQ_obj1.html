@@ -1,0 +1,24 @@
+<ul>
+    <li>html</li>
+    <li>css</li>
+    <li>JavaScript</li>
+</ul>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+    console.log($('li').length);
+    console.log($('li')[0]);
+    var li = $('li');
+    console.group('joo');
+    for(var i=0; i<li.length; i++){
+        console.log(li[i]);
+    }
+    console.groupEnd();
+
+    var ul = $('ul');
+    var li2 = ul[0].children
+    console.group('joo2');
+    for(var i=0; i<li2.length; i++){
+        console.log(li2[i]);
+    }
+    console.groupEnd();
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+    </ul>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        <!--본인은 포함이 안되네.. 즉 ul 하위인 a, li만 가능, ul은 써봤자 인식 못함!-->
+        $('ul').on('click','a, li', function(event){
+            console.log(this.tagName);
+        })
+    </script>
+</body>
+</html>

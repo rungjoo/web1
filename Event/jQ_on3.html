@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="target" />
+    <p id="status"></p>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        <!--1번째 방법-->
+        /*
+        $('#target').on('focus blur', function(e){
+            $('#status').html(e.type);
+        })
+        */
+
+        var handler = function(e){
+            $('#status').html(e.type);
+        }
+        <!--2번째 방법-->
+        /*
+        $('#target').on(
+            {
+            'focus' : handler,
+            'blur' : handler
+            }
+        )
+        */
+
+        <!--3번째 방법-->
+        $('#target').on('focus', handler).on('blur', handler).on('click', handler);
+    </script>
+</body>
+</html>

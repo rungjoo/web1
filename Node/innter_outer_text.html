@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul id="target">
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+    <!--<ul><li>JavaScript Core</li><li>BOM</li><li>DOM</li></ul>-->
+    <ul id="target">&lt;li&gt;JavaScript Core&lt;/li&gt;&lt;li&gt;BOM&lt;/li&gt;&lt;li&gt;DOM&lt;/li&gt;</ul>
+    <input type="button" onclick="get();" value="get" />
+    <input type="button" onclick="set();" value="set" />
+    <script>
+        function get(){
+            var target = document.getElementById('target');
+            alert(target.innerText);
+        }
+        function set(){
+            var target = document.getElementById('target');
+            target.innerText = "<li>JavaScript Core</li><li>BOM</li><li>DOM</li>";
+        }
+    </script>
+</body>
+</html>

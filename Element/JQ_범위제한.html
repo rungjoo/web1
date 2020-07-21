@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        <li class="marked">html</li>
+        <li>css</li>
+        <li id="active">JavaScript
+            <ul>
+                <li>JavaScript Core</li>
+                <li id='test' class="marked">DOM</li>
+                <li class="marked">BOM</li>
+            </ul>
+        </li>
+    </ul>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        <!--$( ".marked", "#active").css( "background-color", "red" );-->
+        <!--$( "#active .marked").css( "background-color", "red" );-->
+        <!--$( "#active").find('.marked').css( "background-color", "red" );-->
+        $('#active').css('color','blue').find('.marked').css( "color", "red" );
+    </script>
+</body>
+</html>

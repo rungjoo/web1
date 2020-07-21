@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" id="target" value="button" />
+    <script>
+        var t = document.getElementById('target');
+        t.onclick = function(event){
+            <!--브라우저 차이-->
+            <!--var event = event || window.event;-->
+            <!--var target = event.target || event.srcElement;-->
+            <!--alert('Hello world, '+target.value)-->
+
+            alert('Hello world, '+event.target.value);
+            console.log(event);
+            console.dir(event);
+            <!--이렇게 해도 됨.-->
+            <!--alert('Hello world, '+this.value);-->
+        }
+    </script>
+</body>
+</html>
